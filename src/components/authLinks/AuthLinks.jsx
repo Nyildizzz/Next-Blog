@@ -12,6 +12,28 @@ function AuthLinks() {
     <>
     {
       status === "notaunticated" ? (
+        <Link className={styles.link} href="/login">Login</Link> 
+      ) : (
+        <>
+        <Link  className={styles.link}  href="/write">Write</Link>
+        <span className={styles.link}>
+          Logout</span>
+        </> 
+      )}
+    <div className={styles.burger} onClick={() =>{
+      setOpen(!open);
+    }}>
+      <div className={styles.line}></div>
+      <div className={styles.line}></div>
+      <div className={styles.line}></div>
+    </div>
+    {open && (
+      <div className={styles.responsiveMenu}>
+        <Link href="/">Homepage</Link>
+        <Link href="/">About</Link>
+        <Link href="/">Contact</Link>
+        {
+      status === "notaunticated" ? (
         <Link href="/login">Login</Link> 
       ) : (
         <>
@@ -20,11 +42,8 @@ function AuthLinks() {
           Logout</span>
         </> 
       )}
-    <div className={styles.burger}>
-      <div className={styles.line}></div>
-      <div className={styles.line}></div>
-      <div className={styles.line}></div>
-    </div>
+      </div>
+    )}
     </>
   )
 }
