@@ -1,10 +1,17 @@
+import Card from "../card/Card";
 import React from 'react'
-import styles from "./cardList.module.css";
+import style from "./cardList.module.css";
 import Pagination from '../pagination/Pagination';
 export default function CardList() {
   return (
-    <div className={styles.container}>
-      cardlist
+    <div className={style.container}>
+    <h1 className={style.title}>Recent Posts</h1>
+    <div className={style.posts}>
+      <Card/>      
+      <Card/>      
+      <Card/>      
+      <Card/>      
+      </div>
         <Pagination />
     </div>
   )
