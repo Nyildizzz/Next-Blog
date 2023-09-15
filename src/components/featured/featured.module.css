@@ -17,6 +17,8 @@
     flex: 1;
     height: 500px;
     position: relative;
+    
+    
 }
 .textContainer{
     flex: 1;
@@ -44,3 +46,37 @@
     width: max-content;
     
 }
+.postBtn:hover{
+    background-color: var(--softTextColor);
+    color: var(--bg);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 1280px) {
+    .title {
+      font-size: 72px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .title {
+      font-size: 64px;
+    }
+  
+    .imgContainer {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .title {
+      font-size: 48px;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .title {
+      font-size: 36px;
+    }
+  }
