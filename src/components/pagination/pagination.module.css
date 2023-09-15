@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.button{
+    width: 100px;
+    border:none;
+    padding: 16px;
+    background-color: #DC1433;
+    color: white;
+    cursor: pointer;
+
+}
+.button:hover{
+    background-color: #ff0000;
+    
+}
