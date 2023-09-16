@@ -24,7 +24,7 @@ function Comments() {
                 <Image className={style.image} width={50} height={50} src="/p1.jpeg" alt="das" />
                 <div className={style.userInfo}>
                     <span className={style.username}>John Doe</span>
-                    <span className={style.date}>15.09.2023</span>
+                    <span className={style.date}> 15.09.2023</span>
 
                 </div>
             </div>

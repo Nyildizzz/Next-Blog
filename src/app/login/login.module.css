@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.wrapper{
+    background-color: var(--softBg);
+    padding: 150px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 15px;
+}
+.socialBtn{
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.socialBtn:first-child{
+    background-color: #E13E2A;
+
+}
+.socialBtn:nth-child(2){
+    background-color: black;
+    
+}
+.socialBtn:nth-child(3){
+    background-color: #39589A;
+    
+}
+.socialBtn:hover{
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
