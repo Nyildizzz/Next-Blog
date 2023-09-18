@@ -2,17 +2,39 @@ import Card from "../card/Card";
 import React from 'react'
 import style from "./cardList.module.css";
 import Pagination from '../pagination/Pagination';
-export default function CardList() {
+
+
+const getData  = async (page) =>{
+  const res = await fetch(`http://localhost:3000/api/posts?page=${page}`, {
+  cache: "no-store",
+});
+
+
+  if(!res.ok){
+    throw new Error("failed to load categories")
+  }
+  return res.json();
+}
+
+
+
+const CardList = async ({page}) => {
+
+  const {posts,count} = await getData(page);
+  const POST_PER_PAGE = 2;
+  const hasPrev = POST_PER_PAGE * (page-1) > 0 ;
+  const hasNext =  POST_PER_PAGE * (page-1) + POST_PER_PAGE < count;
+  
   return (
     <div className={style.container}>
     <h1 className={style.title}>Recent Posts</h1>
     <div className={style.posts}>
-      <Card/>      
-      <Card/>      
-      <Card/>      
-      <Card/>      
+       {posts?.map((item)=>(
+          <Card key={item._id} item={item}/>
+       ))}   
       </div>
-        <Pagination />
+        <Pagination hasPrev={hasPrev} hasNext={hasNext} page={page} />
     </div>
   )
 }
+export default CardList

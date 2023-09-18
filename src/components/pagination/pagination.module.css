@@ -12,7 +12,7 @@
     cursor: pointer;
 
 }
-.button:hover{
-    background-color: #ff0000;
-    
+.button:disabled{
+    background-color: rgba(220, 20, 60, 0.486);
+    cursor: not-allowed;
 }

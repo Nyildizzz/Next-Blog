@@ -2,9 +2,9 @@ import React from "react";
 import style from "./card.module.css";
 import Image from "next/image";
 import Link from "next/link";
-function Card() {
+function Card({key,item}) {
   return (
-    <div className={style.container}>
+    <div className={style.container} key={key}>
       <div className={style.imgContainer}>
         <Image src="/p1.jpeg" alt="recent post ımage" className={style.img} fill />
       </div>
@@ -14,7 +14,7 @@ function Card() {
             <span className={style.category}>Culture </span>
         </div>
         <Link href="/">
-        <h1 className={style.postTitle}>Post Title</h1>
+        <h1 className={style.postTitle}>{item.title}</h1>
         </Link>
         <p className={style.desc}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
