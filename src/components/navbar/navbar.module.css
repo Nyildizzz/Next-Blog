@@ -3,9 +3,11 @@
     align-items: center;
     justify-content: space-between;
     height: 100px;
+    background-color: var(--boxColor);
+    padding: 40px;
+    border: 1px solid transparent;
+    border-radius: 10px;
     
-    
-
 }
 .social{
     display: flex;
@@ -17,7 +19,6 @@
     gap:20px;
     flex:1;
     font-size: 20px;
-    
 }
 .logo{
     flex: 1;

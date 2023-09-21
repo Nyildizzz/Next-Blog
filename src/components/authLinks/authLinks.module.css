@@ -1,6 +1,7 @@
 .link{
     cursor: pointer;
     
+    
 }
 
 .burger{
@@ -11,12 +12,14 @@
     justify-content: space-between;
     cursor: pointer;
     
+    
 }
 
 .line{
      width: 100%;
      height: 2px;
      background-color: var(--textColor);
+     
     
 
 }
@@ -33,6 +36,7 @@
     justify-content: center;
     gap: 50px;
     font-size: 36px;
+    
 }
 
 @media screen and (max-width:640px){

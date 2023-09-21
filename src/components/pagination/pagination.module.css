@@ -10,6 +10,7 @@
     background-color: #DC1433;
     color: white;
     cursor: pointer;
+    border-radius: 5px;
 
 }
 .button:disabled{

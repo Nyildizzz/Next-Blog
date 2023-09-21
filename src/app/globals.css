@@ -37,7 +37,7 @@ body{
     overflow-x: hidden;
     background-color: var(--bg); /* Apply background color variable */
     color: var(--softTextColor); /* Apply text color variable */
-
+    
 
 }
 a{

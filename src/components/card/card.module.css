@@ -3,6 +3,10 @@
     display: flex;
     gap: 50px;
     align-items: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: var(--boxColor);
+    padding: 30px;
 }
 .imgContainer{
     flex: 1;

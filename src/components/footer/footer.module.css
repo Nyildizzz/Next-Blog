@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .logoText{
     font-size:24px;
@@ -23,6 +23,13 @@
 }
 .desc{
     font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 300px;
+    color: var(--softTextColor);
+    background-color: var(--boxColor);
+    border-radius: 10px;
+    padding: 20px;
 }
 .icons{
     margin-top: 10px;

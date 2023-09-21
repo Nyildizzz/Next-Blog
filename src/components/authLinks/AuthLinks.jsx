@@ -30,9 +30,9 @@ function AuthLinks() {
     </div>
     {open && (
       <div className={styles.responsiveMenu}>
-        <Link href="/">Homepage</Link>
-        <Link href="/">About</Link>
-        <Link href="/">Contact</Link>
+        <Link  className={styles.link} href="/">Homepage</Link>
+        <Link  className={styles.link}href="/">About</Link>
+        <Link  className={styles.link}href="/">Contact</Link>
         {
       status === "notaunticated" ? (
         <Link href="/login">Login</Link> 
