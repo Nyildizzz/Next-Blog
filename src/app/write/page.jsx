@@ -77,18 +77,22 @@ function Write() {
 
 
 
-  const handleSubmit = async () =>{
-    const res = await fetch("/api/posts",{
-      method:"POST",
-      body:JSON.stringify({
-        title,
-        desc:value,
-        img:media,
-        slug:slugify(title),
-        catSlug: catSlug || "style"
-      })
-    })
-  }
+      const handleSubmit = async () => {
+        // HTML etiketlerini temizle
+        const cleanDesc = new DOMParser().parseFromString(value, 'text/html').body.textContent;
+      
+        const res = await fetch("/api/posts", {
+          method: "POST",
+          body: JSON.stringify({
+            title,
+            desc: cleanDesc, // Temizlenmiş açıklamayı kullan
+            img: media,
+            slug: slugify(title),
+            catSlug: catSlug || "style"
+          })
+        });
+      };
+      
 
   return (
     <div className={style.container}>

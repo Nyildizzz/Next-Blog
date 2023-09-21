@@ -49,7 +49,9 @@ function Comments({ postSlug }) {
           <button onClick={handleSubmit} className={style.btn}>Send</button>
         </div>
       ) : (
-        <Link href="/login">Login to write a comment</Link>
+        
+          <Link className={style.warningLoginText} href="/login">Login to write a comment</Link>
+        
       )}
       <div className={style.comments}>
         {isLoading ? (

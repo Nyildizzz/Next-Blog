@@ -12,7 +12,7 @@ function blogPost({searchParams}) {
         <div className={styles.content}>
             <CardList page={page} cat={cat} />
             <Menu />
-             
+            
         </div>
     </div>
   )

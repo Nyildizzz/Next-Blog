@@ -7,8 +7,11 @@ import Footer from "@/components/footer/Footer";
 import { ThemeContextProvider } from '@/context/ThemeContext';
 import ThemeProvider from '@/providers/ThemeProvider';
 import AuthProvider from '@/providers/AuthProvider';
+import {Roboto} from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({ subsets: ['latin'],
+  weight: "400" })
 
 export const metadata = {
   title: 'Next Blog',
@@ -18,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
        <AuthProvider>
       <ThemeContextProvider>
             <ThemeProvider>

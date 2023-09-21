@@ -4,6 +4,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    border: 1px solid transparent;
+    background-color: var(--boxColor);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .categoryItem{
@@ -11,23 +15,24 @@
     border-radius: 10px;
     font-size: 14px;
     font-weight: 400;
+    
 }
 .style{
     background-color: #57c4ff31;
 }
 .travel{
-    background-color: #ff57c431;
+    background-color: #8FBC8F;
 }
 .culture{
-    background-color: #ff575731;
+    background-color: #FFA500;
 }
 .food{
-    background-color: #d46565;
+    background-color: #8B0000
 }
 .fashion{
-    background-color: hsl(321, 100%, 74%);
+    background-color: hsl(350, 88%, 84%)
 }
 .coding{
-    background-color: hsl(279, 100%, 79%);
+    background-color: hwb(187 51% 19%);
 }
 

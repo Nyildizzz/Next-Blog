@@ -1,24 +1,28 @@
 :root{
-    --bg:white;
+    --bg:#F4F2EE;
     --textColor:black;
     --softBg:#f5f5f5;
     --softTextColor:#626262;
     --transition-duration: 0.3s;
+    --boxColor: #1B1F23;
 }
 
 .dark {
-    --bg: #0f172a;
+    --bg: black;
     --textColor: #ddd;
     --softBg: #1f273a;
     --softTextColor: #a6a6a6;
+    --boxColor: #1B1F23;
+    
     
   }
   
   .light {
-    --bg: white;
+    --bg: #F4F2EE;
     --textColor: black;
     --softBg: #f0f0f0;
     --softTextColor: #626262;
+    --boxColor: white;
     
   }
 *{

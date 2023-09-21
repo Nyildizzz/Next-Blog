@@ -1,9 +1,10 @@
 .container{
-
+    text-transform: capitalize;
 }
 
 .title{
     margin: 50px 0px;
+    
 
 }
 
@@ -23,23 +24,24 @@
     justify-content: center;
     border-radius: 10px;
 }
+
 .category.style{
     background-color: #57c4ff31;
 }
 .category.travel{
-    background-color: #ff57c431;
+    background-color: #8FBC8F;
 }
 .category.culture{
-    background-color: #ff575731;
+    background-color: #FFA500;
 }
 .category.food{
-    background-color: #d46565;
+    background-color: #8B0000
 }
 .category.fashion{
-    background-color: hsl(321, 100%, 74%);
+    background-color: hsl(350, 88%, 84%)
 }
 .category.coding{
-    background-color: hsl(279, 100%, 79%);
+    background-color: hwb(187 51% 19%);
 }
 .image{
     border-radius: 50%;
