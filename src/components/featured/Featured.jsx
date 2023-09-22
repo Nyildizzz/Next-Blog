@@ -4,9 +4,11 @@ import Image from "next/image";
 export default function Featured() {
   return (
     <div className={styles.container}>
+        <div className={styles.titleContainer}>
         <h1 className={styles.title}>
           <b>Discover, Learn, Grow Your Path to Inspiration!</b> 
         </h1>
+        </div>
         <div className={styles.post}>
           <div className={styles.imgContainer}>
             <Image src="/p1.jpeg"  alt="" fill className={styles.img} />
