@@ -48,7 +48,7 @@ const MenuPosts = ({ withImage }) => {
             <Image src="/p1.jpeg" alt="" fill className={styles.img} />
           </div>
         )}
-        <div className={styles.textContainer}>
+        <div className={styles.textContainerLast}>
           <span className={`${styles.category} ${styles.food}`}>Food</span>
           <h3 className={styles.postTitle}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.

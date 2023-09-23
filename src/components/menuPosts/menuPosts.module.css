@@ -47,8 +47,18 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    border-bottom: 2px solid grey;
+    padding-bottom: 30px;
 
 }
+.textContainerLast{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
 .postTitle{
     font-size: 18px;
     font-weight: 500;
