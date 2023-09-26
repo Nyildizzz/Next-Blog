@@ -20,12 +20,12 @@ function Login() {
   
   return (
     <div className={style.container}>
+      <h2 className={style.title}>Login Section</h2>
         <div className={style.wrapper}>
             <div onClick={() =>{
               signIn("google")
             }} className={style.socialBtn}>Sign in with Google</div>
             <div className={style.socialBtn}>Sign in with Github</div>
-            <div className={style.socialBtn}>Sign in with Facebook</div>
             
         </div>
 

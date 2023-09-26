@@ -4,6 +4,14 @@
     justify-content: center;
     margin-top: 60px;
 }
+.title{
+    display: flex;
+    position: absolute;
+    margin-bottom: 300px;
+   
+    
+    
+}
 
 .wrapper{
     background-color: var(--boxColor);
@@ -12,6 +20,7 @@
     flex-direction: column;
     gap: 50px;
     border-radius: 15px;
+    
 }
 .socialBtn{
     padding: 20px;
@@ -33,10 +42,7 @@
     background-color: black;
     
 }
-.socialBtn:nth-child(3){
-    background-color: #39589A;
-    
-}
+
 .socialBtn:hover{
     opacity: 0.8;
     transition: all 0.3s ease-in-out;
